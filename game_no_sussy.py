@@ -1,9 +1,10 @@
 from time import sleep
 from random import randint
 
-lives = 10
+lives = 1000
+
 coins = 0
-win_amount = 150
+win_amount = 15000
 danger = False
 
 print("Forest Adventures.       -a story game by spooky")
@@ -21,7 +22,7 @@ He kept on walking, randomly damaging himself. Then he found a bear who was frie
 
 He kept on exploring the forest, but he heard branches crack behind him. He decided to check his left and right, and his shoulder one more time. He thought, "Maybe I'm a schizophrenic; I be fearing for my life." After checking, there was no one. Maybe he really is a schizophrenic. Then he decided to check one last time, and there was an angry bear behind him, which damaged him. (He lost 1 life)
 
-After that, he keeps on walking. (What did you expect, bruh?) He keeps randomly damaging himself. (Which took 2 of his lives)""")
+After that, he keeps on walking. (what did you expect, bruh?) He keeps randomly damaging himself. (Which took 2 of his lives)""")
 print()
 print("You are the man in the story. You have 10 lives.")
 print("Press enter each time to advance into the story.")
@@ -67,7 +68,7 @@ while lives > 0:
         coins += 10
     
     if coins >= win_amount:
-        print("He collected " + str(coins) + " and found his way out of the forest, luckily surviving. You won the game!")
+        print("He collected " + str(coins) + " and found his way out of the forest, luckily surviving. You won the game, ggs bro")
         break
     
     if randint(1, 10) == 1:
@@ -78,6 +79,7 @@ while lives > 0:
         if danger:
             danger = False
         print("You found a golden apple, you gained two lives and are protected from any danger!")
+        lives += 2
         print("You have " + str(lives) + " lives left.")
     
     print("You now have " + str(coins) + " gold coins.")
@@ -89,7 +91,7 @@ while lives > 0:
 if coins < win_amount:
     print("""He died.
 His body was later found by a passerby in the forest, he was killed by either a bear or by eating mushrooms or getting randomly damaged - we don't know.
-But what we do know, is that you lost the game lol.""")
+But what we do know, is that you lost the game lol, get rekt""")
     
 
 print()
