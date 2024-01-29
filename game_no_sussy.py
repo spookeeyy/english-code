@@ -25,7 +25,7 @@ After that, he keeps on walking. (What did you expect, bruh?) He keeps randomly 
 print()
 print("You are the man in the story. You have 10 lives.")
 print("Press enter each time to advance into the story.")
-print("Type 'exit' or 'quit' to exit the game.")
+print("Type 'quit' to quit the game.")
 print()
 
 while lives > 0:
@@ -67,7 +67,6 @@ while lives > 0:
         coins += 10
     
     if coins >= win_amount:
-        # win
         print("He collected " + str(coins) + " and found his way out of the forest, luckily surviving. You won the game!")
         break
     
@@ -88,10 +87,10 @@ while lives > 0:
         lives = 0
 
 if coins < win_amount:
-    # lose
     print("""He died.
 His body was later found by a passerby in the forest, he was killed by either a bear or by eating mushrooms or getting randomly damaged - we don't know.
 But what we do know, is that you lost the game lol.""")
+    
 
 print()
 input("Press enter to exit the game.")
